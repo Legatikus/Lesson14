@@ -1,0 +1,46 @@
+.conteiner-article {
+	width: 1120px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 202px;
+}
+.head-article {
+	font-weight: 700;
+    @include font_H2;
+	text-align: center;
+	&::after {
+		@include border;
+		margin-bottom: 72px;
+	}
+}
+.list-article {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 72px;
+	li {
+		@include cards;
+		overflow: hidden;
+	}
+	div {
+		padding: 21px 66px 35px 33px;
+	}
+	h3 {
+        font-family: Mulish, sans-serif;
+		font-weight: 700;
+		font-size: 21px;
+		line-height: 1.52;
+		color: black;
+		margin-bottom: 12px;
+	}
+	p {
+        @include font16;
+		margin-bottom: 25px;
+	}
+	a {
+        font-family: Mulish, sans-serif;
+		font-weight: 600;
+		font-size: 17px;
+		line-height: 1.65;
+		color: #4089ED;
+	}
+}
